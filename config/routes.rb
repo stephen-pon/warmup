@@ -3,7 +3,6 @@ Warmup::Application.routes.draw do
   match '/users/login',                 to:'users#login',                 via:'post', :defaults => { :format => 'json' }
   match '/TESTAPI/resetFixture',  to:'users#TESTAPI_resetFixture',        via:'post', :defaults => { :format => 'json' }
   match '/TESTAPI/unitTests',     to:'users#TESTAPI_unitTests',                      via:'post', :defaults => { :format => 'json' }
-  match '/users/create',       to:'users',      via:'post'
   # The priority is based upon order of creation: first created -> highest priority.
   # See how all your routes lay out with "rake routes".
 
